@@ -1,13 +1,9 @@
 {
-  "name": "DU_Receipts",
+  "name": "AutoML_HeartDisease",
   "projectId": "ed5836bf-d570-4549-bc26-600e272ed8cd",
-  "description": "Blank Process",
+  "description": "use TPOTAutoMLClassification",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.DocumentUnderstanding.ML.Activities": "[1.28.3]",
-    "UiPath.Excel.Activities": "[2.22.3]",
-    "UiPath.IntelligentOCR.Activities": "[6.19.2]",
-    "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.MLServices.Activities": "[2.0.2]",
     "UiPath.System.Activities": "[23.10.3]",
     "UiPath.Testing.Activities": "[23.10.0]",

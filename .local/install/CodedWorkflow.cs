@@ -14,13 +14,13 @@ using UiPath.UIAutomationNext.API.Models;
 using UiPath.UIAutomationNext.Enums;
 using UiPath.CodedWorkflows.DescriptorIntegration;
 
-namespace DU_Receipts
+namespace AutoML_HeartDisease
 {
     public partial class CodedWorkflow : CodedWorkflowBase
     {
         public CodedWorkflow()
         {
-            _ = new System.Type[]{typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.Core.Activities.API.ISystemService)};
+            _ = new System.Type[]{typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService)};
         }
 
         protected UiPath.Core.Activities.API.ISystemService system { get => serviceContainer.Resolve<UiPath.Core.Activities.API.ISystemService>(); }
@@ -31,14 +31,14 @@ namespace DU_Receipts
     }
 }
 
-namespace DU_Receipts.ObjectRepository
+namespace AutoML_HeartDisease.ObjectRepository
 {
     public static class Descriptors
     {
     }
 }
 
-namespace DU_Receipts._Implementation
+namespace AutoML_HeartDisease._Implementation
 {
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {
